@@ -53,3 +53,33 @@ console.log(test.replace('text', 'lifee'))
 let index = 'demo man with demo gun'
 console.log(index.charAt(5))
 
+// charCodeAt()
+let jsdemo = '30 days of JavaScript'
+console.log(jsdemo.charCodeAt(6))
+// this returns the ASCII value of any letter.
+
+// indexOf()
+console.log(jsdemo.indexOf('J'))
+
+// lastIndexOf()
+console.log(jsdemo.lastIndexOf('of'))
+
+// concat()
+console.log(jsdemo.concat(' land'))
+
+// startsWith()
+console.log(jsdemo.startsWith('3'))
+
+// endsWith()
+console.log(jsdemo.endsWith('t'))
+
+// search()
+console.log(jsdemo.search('days'))
+
+// match()
+console.log(jsdemo.match('days'))
+
+// repeat()
+console.log(jsdemo.repeat(3))
+
+
