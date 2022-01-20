@@ -39,3 +39,24 @@ console.log(randomNumber)
 // 0-10
 var randomNum = Math.floor(Math.random() * 11)
 console.log(randomNum)
+
+
+// Absolute value
+
+console.log(Math.abs(-10))
+
+// Square Root
+console.log(Math.sqrt(9))
+
+// Power
+console.log(Math.pow(2,3)) 
+// first one number second one power
+console.log(Math.E)
+
+// Logarithm
+console.log(Math.log(5))
+console.log(Math.log(10))
+
+// trigonometry 
+console.log(Math.sin(90))
+console.log(Math.tan(45))
