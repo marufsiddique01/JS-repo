@@ -60,3 +60,8 @@ console.log(Math.log(10))
 // trigonometry 
 console.log(Math.sin(90))
 console.log(Math.tan(45))
+
+
+
+
+
