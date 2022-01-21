@@ -36,11 +36,33 @@ console.log(empty)
 // console.log(number)
 
 // date object
-const now = new Date()
-console.log(now)
+// const now = new Date()
+// console.log(now)
 
 // getting full year
+const fullYear = new Date()
+console.log(fullYear.getFullYear())
 
+// getting months
+console.log(fullYear.getMonth())
 
+//get date
+console.log(fullYear.getDate())
 
+// getting day
+console.log(fullYear.getDay())
 
+// Getting time
+console.log(fullYear.getTime())
+
+// making the time human readable 
+
+const now = new Date()
+
+const year = now.getFullYear()
+const month = now.getMonth()
+const date = now.getDate()
+const hours = now.getHours()
+const minutes = now.getMinutes()
+
+console.log(`${date}/${month}/${year} ${hours}:${minutes}`)
