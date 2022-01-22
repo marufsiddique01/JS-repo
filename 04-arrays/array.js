@@ -54,10 +54,59 @@ const mixedBucket = firstBucket.concat(secondBucket)
 console.log(mixedBucket)
 
 // array length 
-const lengthTesting = [1,2,3,4,5]
+const lengthTesting = [1,2,3,4,5,3]
 console.log(lengthTesting.length)
 
 // getting index of element in an array
 console.log(lengthTesting.indexOf(5))
 console.log(lengthTesting.indexOf(2))
+
+// last index of an array
+console.log(lengthTesting.lastIndexOf(3))
+
+// checking and element in the array
+console.log(lengthTesting.includes(4))
+
+// Joining array elements
+
+const names = ['Maruf', 'Siddique', 'Auditi']
+console.log(names.join(' + '))
+
+
+// array slice
+const spArray = [1,2,3,4,5,6,7,8,9]
+spArray.splice(6,7)
+console.log(spArray)
+
+// adding item in the array using push method
+
+spArray.push(69)
+console.log(spArray)
+
+// removing item in the array using pop method
+spArray.pop()
+console.log(spArray)
+
+// pop - removes from the end
+// shift - removed from the front
+spArray.shift()
+console.log(spArray)
+
+// Add an element in the front
+spArray.unshift(69)
+console.log(spArray)
+
+// reversing an array orderly
+spArray.reverse()
+console.log(spArray)
+
+// sorting in the array
+spArray.sort()
+console.log(spArray)
+
+const cityNames = ['Dhaka','Cumilla','Alapur','Sirajganj']
+cityNames.sort()
+console.log(cityNames)
+cityNames.reverse()
+console.log(cityNames)
 
