@@ -66,3 +66,17 @@ const hours = now.getHours()
 const minutes = now.getMinutes()
 
 console.log(`${date}/${month}/${year} ${hours}:${minutes}`)
+
+
+
+// exercises 
+
+// find an area of a triangle
+
+var base = prompt('Enter Base')
+var height = prompt('enter height')
+var area = 0.5*base*height
+console.log(`The area of the the triangle is ${area}`)
+
+
+// 
