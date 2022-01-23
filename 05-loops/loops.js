@@ -12,3 +12,12 @@ for(let i=0; i < countries.length; i++){
 }
 console.log(newArr)
   
+// while loop
+let i = 1;
+
+while(i<=5){
+  console.log(i);
+  i++;
+}
+
+
