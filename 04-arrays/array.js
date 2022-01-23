@@ -110,3 +110,13 @@ console.log(cityNames)
 cityNames.reverse()
 console.log(cityNames)
 
+// Task level 2 
+// 2
+let text = 'I love teaching and empowring people. I teach HTML, CSS, JS, React, Python.'
+const words = []
+console.log(text.split())
+
+
+
+console.log(words)
+console.log(words.le)
