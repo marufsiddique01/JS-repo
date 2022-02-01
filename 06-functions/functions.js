@@ -98,3 +98,18 @@ const changeToUpperCase = arr => {
 
 const names = ['maruf', 'auditi', 'siddique', 'sargam']
 console.log(changeToUpperCase(names))
+
+
+// birthday calculator
+
+const calculateBirthday = (nowYear,birthday) => {
+  let age = nowYear - birthday;
+  return age;
+}
+
+const now = new Date()
+
+currentDate = now.getFullYear()
+console.log(calculateBirthday(currentDate , 1997))
+
+
