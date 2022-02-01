@@ -67,4 +67,34 @@ console.log(sumArrayValues(numbers));
 
 // ----------------------------------------------------------
 // Arrow function
+// -----------Regular function
+function square(n){
+  return n*n;
+}
 
+console.log(square(6));
+
+// arrow function with return or multiple line of execution line
+const squareValue = n => {
+  return n*n;
+}
+console.log(squareValue(7));
+
+// arrow function with one line of execution line
+const squareArrowFunc = n => n*n;
+console.log(squareArrowFunc(8));
+
+
+// ------------------=-==
+
+const changeToUpperCase = arr => {
+  const newArr = []
+  for (const elements of arr){
+    newArr.push(elements.toUpperCase())
+  }
+  return newArr;
+}
+
+
+const names = ['maruf', 'auditi', 'siddique', 'sargam']
+console.log(changeToUpperCase(names))
