@@ -112,4 +112,32 @@ const now = new Date()
 currentDate = now.getFullYear()
 console.log(calculateBirthday(currentDate , 1997))
 
+// bmi calculator 
 
+const bmiCalculator = (weight, height) =>{
+
+var bmi = weight/(height * height)
+return bmi; 
+// console.log(bmi)
+
+}
+
+// prompt()
+
+let wei = prompt('Enter Weight', 'in kg')
+let hei = prompt('Enter Height', 'in meter')
+
+var outputBmi = bmiCalculator(wei,hei)
+console.log(outputBmi)
+
+
+if (outputBmi > 18.5){
+  console.log('Under Weight')
+}else if(outputBmi<18.5 && outputBmi > 24.9){
+  console.log('Normal Weight')
+}else if(outputBmi < 25 && outputBmi >29.9){
+console.log('Over weight')
+}else if(outputBmi> 30){
+  console.log('Obese');
+}
+// console.log(bmiCalculator(80,1.6));
