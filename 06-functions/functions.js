@@ -141,3 +141,15 @@ console.log('Over weight')
   console.log('Obese');
 }
 // console.log(bmiCalculator(80,1.6));
+
+// print array function
+const printArray = arr =>{
+  
+for(var items of arr){
+console.log(items)
+}
+}
+
+const dummyArray = ['Jamaika', 'Zimp', 'Objs', 'Test 1']
+
+printArray(dummyArray)
