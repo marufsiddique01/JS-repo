@@ -33,3 +33,27 @@ function letsLearnScope(){
 const employee = {}
 
 // objects with value =>
+const employees = {
+  username: 'demo', 
+  age: 45
+}
+
+console.log(employees)
+
+
+const person = {
+  firstName : 'Maruf',
+  lastName : 'Siddique',
+  age: 25,
+  country: 'Bangladesh',
+  city: 'Dhaka',
+  skills: [
+    'HTML', 'Java', 'Python', 'Design'
+  ],
+  isMarried: false,
+}
+
+console.log(person.lastName)
+// access object items using dot (.) method.
+
+
