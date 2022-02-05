@@ -41,6 +41,23 @@ const employees = {
 console.log(employees)
 
 
+// const person = {
+//   firstName : 'Maruf',
+//   lastName : 'Siddique',
+//   age: 25,
+//   country: 'Bangladesh',
+//   city: 'Dhaka',
+//   skills: [
+//     'HTML', 'Java', 'Python', 'Design'
+//   ],
+//   isMarried: false,
+// }
+
+// console.log(person.lastName)
+// access object items using dot (.) method.
+
+// creating object methods
+
 const person = {
   firstName : 'Maruf',
   lastName : 'Siddique',
@@ -51,9 +68,25 @@ const person = {
     'HTML', 'Java', 'Python', 'Design'
   ],
   isMarried: false,
+  getFullName: function(){
+    return `${this.firstName} ${this.lastName}`
+  }
 }
 
-console.log(person.lastName)
-// access object items using dot (.) method.
+console.log(person.getFullName())
+
+
+// setting new key for an object =>>>>
+const demoData = {
+  firstName : 'Test',
+  lastName : 'Demo',
+}
+
+demoData.nation = 'Bangladeshi'
+demoData.age = 34
+demoData.isMarried = false
+
+console.log(demoData)
+
 
 
