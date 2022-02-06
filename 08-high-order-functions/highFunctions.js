@@ -28,3 +28,35 @@ const higherOrder = n =>{
 
 console.log(higherOrder(2)(3)(10))
 
+// example
+
+const numbers = [1,2,3,4,5]
+const sumArray = arr => {
+  let sum = 0
+  const callback = function(element){
+    sum += element
+  }
+  arr.forEach(callback)
+  return sum
+
+}
+console.log(sumArray(numbers))
+
+// forEach is a callback function
+
+const countries = ['Finland', 'DEnmark', 'Sweden', 'Norway', 'Iceland']
+countries.forEach((element)=> console.log(element.toUpperCase()))
+
+
+// test 
+const mapping = ['bangladesh', 'dhaka', 'banani', 'Mohakhali']
+mapping.forEach((element)=> console.log(element.toUpperCase()))
+
+// map
+// --------------------------
+
+const modifiedArray = arr.map(function (element, index, arr){
+  return element
+})
+
+console.log(modifiedArray())
