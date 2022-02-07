@@ -188,3 +188,61 @@ users.sort((a, b) => {
   return 0
 })
 console.log(users) // sorted ascending
+
+// ==============================================================================
+
+// console.log(mostSpokenLanguages(countries, 10))
+
+
+// *** Find the 10 most spoken languages:
+
+const spokenLanguages = [
+  {country: 'English',count:91},
+  {country: 'French',count:45},
+  {country: 'Arabic',count:25},
+  {country: 'Spanish',count:24},
+  {country:'Russian',count:9},
+  {country:'Portuguese', count:9},
+  {country:'Dutch',count:8},
+  {country:'German',count:7},
+  {country:'Chinese',count:5},
+  {country:'Swahili',count:4}
+  ]
+
+
+
+function mostSpokenLanguages(countries, number){
+  const topTen = countries.sort((a,b) => {
+    return a - b
+    })
+    const numbering = topTen.slice(0,number)
+    return numbering
+}
+
+console.log(mostSpokenLanguages(spokenLanguages, 3))
+
+console.log(mostSpokenLanguages(spokenLanguages, 10))
+
+// *** Use countries_data.js file create a function which create the ten most populated countries
+
+const dumpCounties = [
+  {country: 'China', population: 1377422166},
+  {country: 'India', population: 1295210000},
+  {country: 'United States of America', population: 323947000},
+  {country: 'Indonesia', population: 258705000},
+  {country: 'Brazil', population: 206135893},
+  {country: 'Pakistan', population: 194125062},
+  {country: 'Nigeria', population: 186988000},
+  {country: 'Bangladesh', population: 161006790},
+  {country: 'Russian Federation', population: 146599183},
+  {country: 'Japan', population: 126960000}
+  ]
+
+const mostPopulatedCountries = (countries, number) => {
+const countT = countries.sort((a,b) => {return a - b})
+const finalC = countT.slice(0, number)
+return finalC
+}
+
+console.log(mostPopulatedCountries(dumpCounties, 10))
+console.log(mostPopulatedCountries(dumpCounties, 3))
