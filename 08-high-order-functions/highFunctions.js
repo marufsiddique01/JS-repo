@@ -96,3 +96,43 @@ const studentName = scoresGreaterThanEighty.map((scoresGreaterThanEighty) => sco
 console.log(studentName)
 
 
+// --------------------------
+// reduce
+// reduce: Reduce takes a callback function. The call back function takes accumulator, current, and optional initial value as a parameter and returns a single value. It is a good practice to define an initial value for the accumulator value. If we do not specify this parameter, by default accumulator will get array first value. If our array is an empty array, then Javascript will throw an error.
+//
+
+const numbersToSum = [101, 201, 301, 401, 2, -6, 14, 1237182]
+
+const sum = numbersToSum.reduce((acc, cur) => acc + cur, 0)
+
+console.log(sum)
+
+// every
+// every: Check if all the elements are similar in one aspect. It returns boolean
+// =================
+
+const namedPerson = ['Maruf', 'Samanta', 'Murad']
+
+const allTheNamesAreString = namedPerson.every(
+(names) => typeof names === 'string'
+)
+
+console.log(allTheNamesAreString)
+
+const bools = [true, true, true, true]
+const areAllTrue = bools.every((b) => b !== true) // Are all true? 
+
+console.log(areAllTrue) // true
+
+
+// find
+// find: Return the first element which satisfies the condition
+
+const allAgedPeople = [24,22,18,19,21,22,42]
+
+const age = allAgedPeople.find((age) => age < 20)
+console.log(age)
+
+const namesew = ['Asabeneh', 'Mathiads', 'Elias', 'Brook']
+const result = namesew.find((name) => name.length > 7)
+console.log(result)
