@@ -52,6 +52,7 @@ countries.forEach((element)=> console.log(element.toUpperCase()))
 const mapping = ['bangladesh', 'dhaka', 'banani', 'Mohakhali']
 mapping.forEach((element)=> console.log(element.toUpperCase()))
 
+// --------------------------
 // map
 // --------------------------
 
@@ -69,4 +70,29 @@ console.log(namedToUpeerCase)
 const userCountries = ['Finland', 'DEnmark', 'Sweden', 'Norway', 'Iceland', 'Bangladesh', 'India']
 const countryCode = userCountries.map((userCountries) => userCountries.slice(0,3).toUpperCase())
 console.log(countryCode)
+
+// --------------------------
+// filter
+// Filter: Filter out items which full fill filtering conditions and return a new array.
+// --------------------------
+
+const countriesThatHaveLandInIt = userCountries.filter((userCountries)=> userCountries.endsWith('way'))
+console.log(countriesThatHaveLandInIt)
+
+const scores = [
+  { name: 'Asabeneh', score: 95 },
+   { name: 'Lidiya', score: 98 },
+  { name: 'Mathias', score: 80 },
+  { name: 'Elias', score: 50 },
+  { name: 'Martha', score: 85 },
+  { name: 'John', score: 100 },
+]
+
+const scoresGreaterThanEighty = scores.filter((scores)=> scores.score >80)
+
+console.log(scoresGreaterThanEighty[0].name)
+
+const studentName = scoresGreaterThanEighty.map((scoresGreaterThanEighty) => scoresGreaterThanEighty.name)
+console.log(studentName)
+
 
