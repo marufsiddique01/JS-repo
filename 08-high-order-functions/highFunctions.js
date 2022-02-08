@@ -136,3 +136,55 @@ console.log(age)
 const namesew = ['Asabeneh', 'Mathiads', 'Elias', 'Brook']
 const result = namesew.find((name) => name.length > 7)
 console.log(result)
+
+// some
+// some: Check if some of the elements are similar in one aspect. It returns boolean
+
+const namesews = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
+const boolss = [true, true, true, true]
+
+const areSomeTrue = boolss.some((b) =>  b === true)
+
+console.log(areSomeTrue) //true
+
+const areAllStr = namesews.some((name) => typeof name === 'number') // Are all strings ?
+console.log(areAllStr) // false
+
+// sort
+// Sorting string values
+
+const products = ['Milk', 'Coffee', 'Sugar', 'Honey', 'Apple', 'Carrot']
+console.log(products.sort()) // ['Apple', 'Carrot', 'Coffee', 'Honey', 'Milk', 'Sugar']
+//Now the original products array  is also sorted
+
+// Sorting Numeric values
+
+const numberss = [9.81, 3.14, 100, 37]
+// Using sort method to sort number items provide a wrong result. see below
+console.log(numberss.sort()) //[100, 3.14, 37, 9.81]
+numberss.sort(function (a, b) {
+  return a - b
+})
+
+console.log(numberss) // [3.14, 9.81, 37, 100]
+
+numberss.sort(function (a, b) {
+  return b - a
+})
+console.log(numberss) //[100, 37, 9.81, 3.14]
+
+// Sorting Object Arrays
+
+
+const users = [
+  { name: 'Asabeneh', age: 150 },
+  { name: 'Brook', age: 50 },
+  { name: 'Eyob', age: 100 },
+  { name: 'Elias', age: 22 },
+]
+users.sort((a, b) => {
+  if (a.age < b.age) return -1
+  if (a.age > b.age) return 1
+  return 0
+})
+console.log(users) // sorted ascending
