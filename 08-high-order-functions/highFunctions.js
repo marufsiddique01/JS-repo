@@ -55,8 +55,18 @@ mapping.forEach((element)=> console.log(element.toUpperCase()))
 // map
 // --------------------------
 
-const modifiedArray = arr.map(function (element, index, arr){
-  return element
-})
+// const modifiedArray = arr.map(function (element, index, arr){
+//   return element
+// })
 
-console.log(modifiedArray())
+// console.log(modifiedArray())
+
+
+const names = ['John', 'Jane', 'Mary', 'Mark', 'Bob']
+const namedToUpeerCase = names.map((name) => name.toUpperCase())
+console.log(namedToUpeerCase)
+
+const userCountries = ['Finland', 'DEnmark', 'Sweden', 'Norway', 'Iceland', 'Bangladesh', 'India']
+const countryCode = userCountries.map((userCountries) => userCountries.slice(0,3).toUpperCase())
+console.log(countryCode)
+
