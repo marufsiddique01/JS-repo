@@ -160,7 +160,48 @@ console.log(office2);
 
 // Static method
 
+class Doggos {
+  constructor(name, age, country, city) {
+    this.name = name
+    this.age = age
+    this.country = country
+    this.city = city
+    this.skill = []
+
+  }
+  get getSkills() {
+    return this.skills
+  }
+  set setSkill(skill) {
+    this.skills.push(skill)
+  }
+  static favoriteSkill(skill) {
+    const skills = ['Dancing', 'Walking', 'Cudling', 'Racing', 'Jumping']
+    const index = Math.floor(Math.random() * skills.length)
+    return skills[index]
+  }
+}
+
+console.log(Doggos.favoriteSkill());
+
+
 // ===>>
 // Inheritance
+// Using inheritance we can access all the properties and the methods of the parent class. This reduces repetition of code. If you remember, we have a Person parent class and we will create children from it. Our children class could be student, teach etc.
+
+// creating pet doggos class from doggos class
+class PetDoggos extends Doggos {
+  saySomething() {
+    console.log('I am a child of the Doggos class')
+  }
+
+
+}
+
+const d1 = new PetDoggos('Bull', '23', 'Bangladesh', 'Dhaka')
+console.log(d1);
+console.log(d1.age);
+console.log(d1.saySomething());
+
 
 // overriding methods
