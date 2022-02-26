@@ -59,16 +59,16 @@ console.log(student2);
 // class methods
 // Methods are javascript functions inside the class
 
-class CityInformation{
-constructor(cityName, country, age){
-  this.cityName = cityName
-  this.country = country
-  this.age = age
-}
-getMoreInformation(){
-const info = this.cityName + " is the capital of " + this.country
-return info
-}
+class CityInformation {
+  constructor(cityName, country, age) {
+    this.cityName = cityName
+    this.country = country
+    this.age = age
+  }
+  getMoreInformation() {
+    const info = this.cityName + " is the capital of " + this.country
+    return info
+  }
 }
 
 
@@ -79,10 +79,84 @@ console.log(city1.getMoreInformation());
 
 
 // properties with initial value
+class GameDetails {
+  constructor(gameName, releaseDate) {
+    this.gameName = gameName
+    this.releaseDate = releaseDate
+    this.score = 0
+    this.type = ['Shooting', 'FPS', 'Online']
+  }
+}
+
+const game1 = new GameDetails('CSGO', '2007')
+console.log(game1);
+console.log(game1.score, game1.type);
 
 // getter
+// to get values from an object
+
+class Officeget {
+  constructor(officeName, location, employeeCount, type) {
+    this.officeName = officeName
+    this.location = location
+    this.employeeCount = employeeCount
+    this.type = type
+  }
+  get getOfficeName() {
+    return this.officeName;
+  }
+  get getLocation() {
+    return this.location
+  }
+  get getEmployeeCount() {
+    return this.employeeCount
+  }
+}
+
+const office1 = new Officeget('OrangeBD', 'Dhaka', 120, 'IT Company')
+
+console.log(office1);
+console.log(office1.getOfficeName);
 
 // setter
+
+class Officeset {
+  constructor(officeName, location, employeeCount, type) {
+    this.officeName = officeName
+    this.location = location
+    this.employeeCount = employeeCount
+    this.score = 0
+    this.type = []
+  }
+  get getOfficeName() {
+    return this.officeName;
+  }
+  get getLocation() {
+    return this.location
+  }
+  get getEmployeeCount() {
+    return this.employeeCount
+  }
+
+  set setScore(score) {
+    this.score += score
+  }
+
+  set setType(type) {
+    this.type.push(type)
+  }
+
+}
+
+const office2 = new Officeset('OrangeBD', 'Dhaka', 120, 'IT Company')
+console.log(office2);
+
+office2.setScore = 2
+office2.setType = 'Offline'
+office2.setType = 'Hybrid'
+
+console.log(office2);
+
 
 // Static method
 
