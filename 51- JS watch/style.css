@@ -1,6 +1,6 @@
 
 html {
-  background: #018DED url(https://images.unsplash.com/photo-1501139083538-0139583c060f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+  background: #018DED url(https://w.wallhaven.cc/full/dp/wallhaven-dpo38l.jpg);
   background-size: cover;
   font-family: 'helvetica neue';
   text-align: center;
@@ -14,6 +14,10 @@ body {
   flex: 1;
   min-height: 100vh;
   align-items: center;
+}
+
+.analog-clock{
+  width: 100%;
 }
 
 .clock {
@@ -41,7 +45,7 @@ body {
 .hand {
   width: 50%;
   height: 6px;
-  background: black;
+  background: rgb(255, 255, 255);
   position: absolute;
   top: 50%;
   transform-origin: 100%;
@@ -51,3 +55,29 @@ body {
   transition-timing-function: ease-in-out;
 }
 
+
+.time{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 5rem;
+  font-weight: bold;
+  color: white;
+  /* position: relative; */
+  flex: auto;
+  margin: auto;
+  width: 50%;
+}
+
+.clock-box{
+  border: #eff6fa solid 1px;
+}
+
+.digital-clock{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  margin: 0 auto;
+  top: 20%;
+  width: 100%;
+
+}
